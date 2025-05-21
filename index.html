@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Fim Google Fonts-->
+    <!--Boot Strap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Fim Boot Strap-->
+    <link rel="stylesheet" href="styleSheets/style.css">
+    <link rel="stylesheet" href="styleSheets/carrocel.css">
+
+
+    <script src="js/menu.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/carrocel.js" defer></script>
+
+    <title>MedBR Global</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/LogoTopo250x115 copy.png" alt="Logo da MedBR Global">
+                </a>
+            </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#topo-do-site">Inicio</a></li>
+                    <li><a href="#saude">Saúde</a></li>
+                    <li><a href="#profissionais">Profissionais</a></li>
+                    <li><a href="#curiosidade">Curiosidade</a></li>
+                </ul>
+            </nav><!--menu-desktop-->
+
+            <div class="btnsugestao">
+                <a href="#formulario">
+                    <button>Sugestão</button>
+                </a>
+            </div><!--Btn-Sugestão-->
+
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-abrir-menu-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--btn-fechar-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#topo-do-site">Inicio</a></li>
+                        <li><a href="#saude">Saúde</a></li>
+                        <li><a href="#profissionais">Profissionais</a></li>
+                        <li><a href="#curiosidade">Curiosidade</a></li>
+                        <li><a href="#formulario">Sugestão</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div><!--overlay-menu-->
+
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-do-site" id="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Saúde brasileira ao seu alcance, em qualquer lugar!</h1>
+                        <p>Na <span class="lblue">Med</span><span class="lgreen">B</span><span class="lyellow">R</span>
+                            <span class="lgreen">Gl</span><span class="lyellow">o</span><span class="lgreen">bal</span>,
+                            sua saúde não tem fronteiras! Conectamos você a
+                            médicos, psicólogos e profissionais de saúde brasileiros, onde quer que esteja no mundo.
+                            Cuide do seu bem-estar com quem entende você!
+                        </p>
+
+                        <div class="btnsugestao">
+                            <a href="#formulario">
+                                <button>Deixe sua Sugestão</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="images/doctor-principal.png" alt="Doctor">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section class="saude" id="saude">
+            <div class="interface">
+                <h2 class="titulo">Saúde</h2>
+                <div class="flex">
+                    <a href="comunidade.html">
+                        <div class="saude-box">
+                            <img class="imagem" src="images/icon/Community copy.png" alt="Community">
+                            <h3>Para Comunidade</h3>
+                            <p class="saudeTxt">Centros comunitários de saúde nos EUA oferecem
+                                exames e atendimento acessíveis ou gratuitos para
+                                pessoas de baixa renda, sem importar o status migratório.
+                            </p>
+                            <div class="cliqueAqui">
+                                <p>Clique Aqui!</p>
+                            </div>
+                            
+                        </div><!--saude-box-->
+                    </a>
+
+                    <a href="saudeMental.html">
+                        <div class="saude-box">
+                            <img class="imagem" src="images/icon/psicologico.png" alt="Saúde Mental">
+                            <h3>Saúde Mental</h3>
+                            <p>Morar fora pode ser desafiador, mas você não está sozinho! Cuide da
+                                sua saúde mental com profissionais que falam sua língua e entendem
+                                sua cultura.
+                            </p>
+                            <div class="cliqueAqui">
+                                <p>Clique Aqui!</p>
+                            </div>
+                        </div><!--saude-box-->
+                    </a>
+
+                    <a href="prevencao.html">
+                        <div class="saude-box">
+                            <img class="imagem" src="images/icon/vitamina.png" alt="Prevenção">
+                            <h3>Prevenção</h3>
+                            <p>Nos EUA, o acesso a suplementos em lojas como GNC, Vitamin Shoppe
+                                e Walgreens facilita a prevenção de doenças e a manutenção da
+                                saúde. Cuide do seu bem-estar.
+                            </p>
+                            <div class="cliqueAqui">
+                                <p>Clique Aqui!</p>
+                            </div>
+                        </div><!--saude-box-->
+                    </a>
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--saude-->
+
+        <section class="profissionais" id="profissionais">
+            <h2 class="titulo">Profissionais</h2>
+
+            <div class="container">
+                <div class="card-carousel">
+                    <div class="card" id="1">
+                        <div class="image-container" style="background-image: url('images/dr.icaro.jpg');"></div>
+                        <h2 class="profissional">Dr. Ícaro Alves Alcântra</h2>
+                        <p class="conselho">CRM/DF 11639</p>
+                        <p class="descritivo">Médico formado pela Universidade de Brasília em 2000,
+                            com especialização em Homeopatia e pós-graduação em Estratégia Ortomolecular em
+                            Medicina.
+                            Com mais de 25 anos de experiência, já atendeu mais de 40 mil pacientes,
+                            focando em abordagens integrativas e ortomoleculares para promover qualidade de vida
+                            e hábitos
+                            saudáveis. Além de médico, é autor de nove livros e palestrante em temas como
+                            qualidade
+                            de vida, emagrecimento saudável e gestão do estresse.</p>
+                        <div class="btn-social">
+                            <a href="https://icaro.med.br" target="_blank"><button><i
+                                        class="bi bi-globe"></i></button></a>
+                            <a href="https://www.instagram.com/dricaroalves/?ref=indirimlikupon.com"
+                                target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.facebook.com/icaro.aa/?locale=pt_BR" target="blank"><button><i
+                                        class="bi bi-facebook"></i></button></a>
+                            <a href="https://www.youtube.com/user/icaroalves" target="_blank"><button><i
+                                        class="bi bi-youtube"></i></button></a>
+                            <a href="https://wa.me/5561996467775" target="_blank"><button><i
+                                        class="bi bi-whatsapp"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="card" id="2">
+                        <div class="image-container" style="background-image: url('images/Dr.Spider.jpg');"></div>
+                        <h2 class="profissional">Dr. Marco Aurelio Aranha da Silveira(Dr. Spider)</h2>
+                        <p class="conselho">CRM/PR 19352</p>
+                        <p class="descritivo">Clínico geral com ampla experiência em pacientes diversos,
+                            incluindo atletas e ex-atletas do UFC. Vai além do tratamento, promovendo
+                            saúde, qualidade de vida e desempenho físico. Com abordagem personalizada,
+                            cuida do bem-estar e da longevidade, além de auxiliar atletas na recuperação
+                            e manutenção da performance. Sua expertise no acompanhamento de profissionais
+                            de alto rendimento o torna referência em saúde e desempenho.</p>
+                        <div class="btn-social">
+                            <a href="https://kingcommkt.online/thedoctorspiderconcept" target="_blank"><button><i
+                                        class="bi bi-globe"></i></button></a>
+                            <a href="https://www.instagram.com/thedoctorspider/" target="_blank"><button><i
+                                        class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.facebook.com/p/Marco-Aranha-100042065736052/"
+                                target="_blank"><button><i class="bi bi-facebook"></i></button></a>
+                            <a href="https://api.whatsapp.com/send?phone=5541988007706" target="_blank"><button><i
+                                        class="bi bi-whatsapp"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="card" id="3">
+                        <div class="image-container" style="background-image: url('images/felypeAndrade.jpg');"></div>
+                        <h2 class="profissional">Nutricionista - Felype Andrade</h2>
+                        <p class="conselho">CRN/DF 17254</p>
+                        <p class="descritivo">
+                            Se você busca uma alimentação equilibrada, saúde de qualidade e resultados reais,
+                            Felype Andrade é o profissional ideal para te guiar nessa jornada! Com uma abordagem
+                            personalizada e baseada em ciência, Felype auxilia pacientes a conquistarem seus
+                            objetivos,
+                            seja para emagrecimento, ganho de massa muscular, melhora do desempenho esportivo ou
+                            reeducação
+                            alimentar.
+                        <p>
+
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/nutri.felypeandrade/" target="_blank"><button><i
+                                        class="bi bi-instagram"></i></button></a>
+                            <a href="https://wa.me/5561981249282" target="_blank"><button><i
+                                        class="bi bi-whatsapp"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="card" id="4">
+                        <div class="image-container" style="background-image: url('images/dr.Liamara.jpg');"></div>
+                        <h2 class="profissional">Dra. Liamara Lopes Toledo</h2>
+                        <p class="conselho">CRP/DF 01-23739</p>
+                        <p class="descritivo">Psicóloga formada pelo UDF, com
+                            ampla experiência em psicoterapia de casais, adolescentes, adultos
+                            e idosos. Especialista em Psicodrama e pós-graduada em TCC, atua no
+                            tratamento de ansiedade, depressão, relacionamentos e autoconhecimento.
+                            Possui formação em Manejo de Suicídio, Terapia do Esquema e enfrentamento
+                            da violência contra a mulher, oferecendo acolhimento e estratégias eficazes
+                            para o bem-estar emocional de seus pacientes.</p>
+
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/liamaratoledo/" target="_blank"><button><i
+                                        class="bi bi-instagram"></i></button></a>
+                            <a href="https://wa.me/5561998914455" target="_blank"><button><i
+                                        class="bi bi-whatsapp"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="card" id="5">
+                        <div class="image-container" style="background-image: url('images/Dr.Karen.jpg');"></div>
+                        <h2 class="profissional">Dra. Karen Cristina de Paula Santos</h2>
+                        <p class="conselho">CRP/DF 01-21478</p>
+                        <p class="descritivo">Psicóloga formada
+                            pela Universidade Católica de Goiás em 2006, com
+                            especialização em Neuropsicologia. Atua no atendimento
+                            de adolescentes, adultos e idosos, promovendo o desenvolvimento
+                            emocional e cognitivo. Com abordagem fenomenológico-existencial,
+                            oferece um espaço acolhedor para autoconhecimento e enfrentamento
+                            de questões como ansiedade, estresse e dificuldades de adaptação,
+                            sempre buscando o bem-estar e a qualidade de vida.</p>
+
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/karen.neuropsicologa/" target="_blank"><button><i
+                                        class="bi bi-instagram"></i></button></a>
+                            <a href="https://wa.me/5561996266606" target="_blank"><button><i
+                                        class="bi bi-whatsapp"></i></button></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+            </div>
+        </section><!--profissionais-->
+
+        <section class="curiosidades" id="curiosidade">
+            <div class="interface">
+                <h2 class="titulo">Curiosidades</h2>
+                <div class="grid">
+                    <div class="img">
+                        <img src="images/acidente de trabalho copy.jpg" alt="acidente de trabalho">
+                    </div><!--img acidente trabalho-->
+                    <div class="txt">
+                        <h3>Acidente de Trabalho nos EUA: Saúde, Benefícios e Seus Direitos</h3>
+                        <p>
+                            Nos Estados Unidos, sofrer um acidente de trabalho pode trazer preocupações
+                            não apenas com a recuperação, mas também com as despesas médicas e a renda durante
+                            o afastamento. Felizmente, a maioria dos trabalhadores tem direito ao Workers' Compensation,
+                            um sistema de compensação trabalhista que cobre tratamentos médicos e parte do salário
+                            perdido.
+                        </p>
+                        <h3>Principais Direitos:</h3>
+                        <li>Custos médicos pagos (consultas, exames, cirurgias e fisioterapia).</li>
+                        <li>Indenização por afastamento devido à incapacidade temporária ou permanente.</li>
+                        <li>Reabilitação e suporte para retorno ao trabalho.</li>
+                        <li>Cobertura para todos os trabalhadores, independentemente do status migratório ou seguro de
+                            saúde.</li>
+                        <h3>O Que Fazer?</h3>
+                        <ol>
+                            <li>Relatar o acidente ao empregador imediatamente.</li>
+                            <li>Buscar atendimento médico e informar que a lesão ocorreu no trabalho.</li>
+                            <li>Registrar tudo (detalhes do acidente e documentos médicos).</li>
+                            <li>Preencher os formulários do Workers' Compensation.</li>
+                            <li>Procurar apoio legal se os benefícios forem negados.</li>
+                        </ol>
+                    </div><!--txt acidente trabalho-->
+                </div><!--Grid-->
+
+                <div class="grid">
+                    <div class="img">
+                        <img src="images/Kids Insurance.jpg" alt="acidente de trabalho">
+                    </div><!--img kids insurance-->
+
+                    <div class="txt">
+                        <h3>ANJ FamilyCare – Medicaid e CHIP</h3>
+                        <li>Gestantes: Nova Jersey permite que mulheres grávidas se
+                            qualifiquem para o Medicaid, independentemente do status migratório,
+                            desde que atendam aos requisitos de renda. Isso cobre consultas pré-natais,
+                            exames, parto e cuidados pós-parto.</li>
+                        <li>Crianças: O programa NJ FamilyCare oferece seguro de saúde para crianças de
+                            famílias de baixa renda, cobrindo consultas médicas, vacinas, exames e
+                            emergências. Todas as crianças menores de 19 anos podem ser elegíveis,
+                            mesmo sem status legal.
+                        </li>
+
+                        <h3>Hospitais e Atendimento de Emergência</h3>
+                        <li>O atendimento emergencial é garantido por lei (EMTALA),
+                            então hospitais não podem recusar gestantes em trabalho de parto,
+                            independentemente da imigração.
+                        </li>
+                        <li>
+                            O Emergency Medicaid cobre emergências médicas e parto para imigrantes
+                            sem documentos que se qualifiquem pela renda.
+                        </li>
+                    </div><!--txt kids insurance-->
+
+                </div><!--grid-->
+
+            </div><!--interface-->
+        </section>
+
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">Sugestão</h2>
+
+                <form id="form">
+                    <input type="text" name="nome" id="nome" placeholder="Nome (obrigatório)" required>
+                    <input type="email" name="email" id="email" placeholder="Email (obrigatório)" required>
+                    <input type="number" name="celular" id="celular" placeholder="Celular">
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem (obrigatório)" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+    </main>
+
+    <footer>
+        <p>Número de visitas.</p>
+        <!-- Inicia codigo Contador -->
+        <div align="center"><img src='https://megacontador.com.br/img-CjxqEXWESWHMB8qY-3.gif' border='0'
+                alt='Contador de visitas'></a></div>
+        <!-- Fim do codigo Contador -->
+
+        <div class="interface">
+            <div class="logo-footer">
+                <img src="images/LogoTopo250x115 copy.png" alt="">
+            </div><!--logo-footer-->
+            <nav class="menu-footer">
+                <ul>
+                    <li><a href="#topo-do-site">Inicio</a></li>
+                    <li><a href="#saude">Saúde</a></li>
+                    <li><a href="#profissionais">Profissionais</a></li>
+                    <li><a href="#curiosidade">Curiosidade</a></li>
+                </ul>
+            </nav><!--menu-desktop-->
+
+        </div><!--interface-->
+
+        <a href="https://rickdf7.github.io/meu-site/index.html" target="_blank">
+            <p>© 2024-2025 Henrique Aguiar, Inc. Todos os direitos reservados.</p>
+        </a>
+
+    </footer>
+
+</body>
+
+</html>
