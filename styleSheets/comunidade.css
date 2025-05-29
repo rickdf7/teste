@@ -6,21 +6,48 @@
 }
 
 body {
-    background-color: white;
     height: 100vh;
+}
+
+/* Para dividir na vertical, use a propriedade display: flex; e align-items: stretch */
+header {
+    display: flex;
+    flex-direction: column;
+    /* Faz com que os elementos sejam dispostos verticalmente */
+    align-items: stretch;
+    /* Opcional, estica os elementos verticalmente */
+}
+
+.headerTop{
+    padding: 20px 4%;
+    background-color: #31689f;
+}
+
+.headerTop a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.headerBottom{
+    padding: 20px 4%;
+    border-bottom: 2px solid #31689f;
 }
 
 .container {
     display: flex;
-    flex-direction: row;        /* imagem e texto lado a lado */
-    justify-content: center;    /* centraliza na horizontal */
-    align-items: center;        /* centraliza na vertical */
+    flex-direction: row;
+    /* imagem e texto lado a lado */
+    justify-content: center;
+    /* centraliza na horizontal */
+    align-items: center;
+    /* centraliza na vertical */
     padding: 30px;
     width: 100%;
     max-width: 1350px;
     margin: 0 auto;
     gap: 20px;
-    flex-wrap: wrap; /* permite quebra em telas menores */
+    flex-wrap: wrap;
+    /* permite quebra em telas menores */
 }
 
 .img img {
@@ -71,9 +98,37 @@ i {
     background-color: whitesmoke;
 }
 
-@media (max-width: 768px) {
+footer {
+    border-top: #31689f solid 2px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    color: black;
+}
+
+footer img {
+    width: 50%;
+}
+
+@media (max-width: 1130px) {
+
+    footer .btn-voltar {
+        display: none;
+    }
+
     .container {
-        flex-direction: column;     /* imagem e texto um embaixo do outro */
+        flex-direction: column;
+        /* imagem e texto um embaixo do outro */
         padding: 20px;
     }
 
@@ -83,9 +138,18 @@ i {
         max-width: 320px;
     }
 
-    p {
-        font-size: 18px;
-        text-align: center;
-        margin-top: 10px;
+    .linkName p {
+        font-size: 13px;
+    }
+
+    footer {
+        border-top: #31689f solid 2px;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0px;
+        text-align: center
     }
 }

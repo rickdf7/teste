@@ -1,0 +1,471 @@
+/*Estilo Geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+}
+.flex{
+    display: flex;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.btnsugestao button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #31689f;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0 0 8px  #31689f76;
+    transform: scale(1.05);
+}
+h2.titulo{
+    color: #31689f;
+    font-size: 60px;
+    text-align: center;
+
+}
+header > .interface, footer > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a, footer .menu-footer a{
+    color: #a8b7c6;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+header a:hover, footer .menu-footer a:hover{
+    color: #31689f;
+    transform: scale(1.15);
+}
+header nav ul, footer nav ul{
+    list-style-type: none;
+}
+header nav.menu-desktop ul li, footer nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*Estilo do Cabeçalho*/
+header{
+    padding: 40px 4%;
+}
+/*Menu Mobile*/
+.btn-abrir-menu {
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    color: #31689f;
+    width: 80px;
+    display: none;
+    font-size: 0px; /* Aumenta o tamanho do ícone */
+}
+.menu-mobile{
+    background-color: #31689f;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+.btn-abrir-menu i{
+    font-size: 70px;
+    margin: 0;
+    
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 10%;
+}
+.menu-mobile .btn-fechar i{
+    color: #ffff;
+    font-size: 35px;
+}
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 20px 10%;
+}
+.overlay-menu{
+    background-color: #31689f6b;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88;
+    display: none;
+}
+
+/*Estilo topo do Site*/
+section.topo-do-site{
+    padding: 100px 4%;
+    flex-direction: column;
+    display: flex;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site .txt-topo-site h1 {
+    color: black;
+    font-size: 38px;
+    line-height: 40px;
+}
+.topo-do-site .txt-topo-site p{
+    color: black;
+    margin: 40px 0;
+    font-size: 22px;
+    text-align: justify;
+    hyphens: auto;
+}
+.topo-do-site .txt-topo-site .lblue {
+    color: #31689f;
+    font-weight: bold
+}
+.topo-do-site .txt-topo-site .lgreen {
+    color: #009440;
+    font-weight: bold
+}
+.topo-do-site .txt-topo-site .lyellow {
+    color: #ffcb00;
+    font-weight: bold
+}
+.topo-do-site .img-topo-site img{
+    border: 0;
+    border-radius: 15px;
+}
+/*Estilo Saude*/
+section.saude{
+    padding: 100px 4%;
+}
+section.saude .flex{
+    gap: 40px;
+}
+section.saude .saude-box{
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.2s;
+}
+section.saude .saude-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #31689f8b;
+}
+section.saude .saude-box h3{
+    text-align: center;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+section.saude img {
+    display: block;
+    margin: 0 auto;
+}
+
+section.saude .saude-box {
+    text-align: justify;
+    hyphens: auto;
+}
+.saude a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+.cliqueAqui {
+    font-weight: bold;       /* negrito */
+    text-align: center;
+    color: #31689f;
+    margin-top: 20px;
+}
+
+/*Estilo Profissionais*/
+.centralizar {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.depoimentos {
+    width: 100%;
+    padding: 50px 20px;
+
+    max-width: 900px;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.depoimentos .slide{
+    padding: 3px 40px;
+    cursor: grab;
+}
+
+.depoimentos .slide:active{
+    cursor: grabbing;
+}
+
+.slide img{
+    width: 120px;
+    height: auto;
+    border-radius: 100%;
+    border: solid 5px rgba(0, 0, 0, .1);
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.slide .profissional{
+    font-size: 20px;
+    text-align: center;
+}
+
+.slide .conselho{
+    text-align: center;
+}
+
+.slide .descritivo{
+    font-size: 20px;
+    font-weight: 200;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/*botões das redes sociais*/
+i {
+    font-size: 23px;
+}
+
+.profissionais .btn-social button {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    color: whitesmoke;
+    background-color: #000000;
+    font-size: 1px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.depoimentos .btn-social button:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+/*Estilo curiosidades*/
+section.curiosidades{
+    padding: 80px 4%;
+}
+section.curiosidades .grid{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+}
+section.curiosidades .txt{
+    margin: 40px;
+    margin-top: -10px;
+}
+section.curiosidades .txt h3{
+    padding: 30px 0;
+}
+section.curiosidades .txt p{
+    padding: 5px 0;
+    text-align: justify;
+    hyphens: auto;
+}
+
+section.curiosidades .img img{
+    border-radius: 15px;
+    border: 15px solid #5ca5c3;
+}
+/*Estilo do formulario sugestão*/
+section.formulario{
+    padding: 85px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+form input, form textarea {
+    width: 100%;
+    background-color: #5ca6c31e;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: black;
+    font-size: 18px;
+}
+form textarea{
+    resize: none;
+    max-height: 600px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: #31689f;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+/*Estilo do Footer*/
+footer{
+    padding: 40px 4%;
+}
+footer a{
+    text-decoration: none;
+}
+footer .interface{
+    border-top: #31689f solid 2px;
+}
+footer p{
+    text-align: center;
+    color: black;
+}
+@media screen and (max-width: 1130px){
+
+    /*Estilo Gerais*/
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    section.saude .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 50px;
+    }
+
+    /*Cabeçalho*/
+    .menu-desktop, .btnsugestao{
+        display: none;
+    }
+    .btn-abrir-menu{
+        display: block;
+    }
+
+    /*topo do site*/
+    /*Estilo topo do Site*/
+    section.topo-do-site{
+        padding: 10px 4%;
+    }
+
+    section.topo-do-site .flex{
+        gap: 10px;
+    }
+    
+    .topo-do-site .txt-topo-site h1 {
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .topo-do-site .txt-topo-site p{
+        margin: 10px 0;
+        font-size: 22px;
+    }
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    /*Saude*/
+    section.saude .saude-box{
+        transform: scale(1.05);
+        box-shadow: 0 0 8px #31689f8b;
+    }
+
+    section.saude .saude-box h3{
+        font-size: 28px;
+        margin: 5px 0;
+    }
+
+    /*Profissionais*/
+    .depoimentos {
+        width: 100%;
+    }
+
+    .depoimentos .slide{
+        padding: 0 20px;
+    }
+
+    .slide img{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    /*Estilo Curiosidade*/
+    section.curiosidades .grid{
+        padding: 4px 0;
+        flex-direction: column;
+    }
+    
+    section.curiosidades img{
+        width: 100%;
+    }
+
+    section.curiosidade h3{
+        font-size: 60px;
+    }
+    section.curiosidades .txt{
+        margin: 5px;
+        margin-top: 0px;
+    }
+    section.curiosidades .txt h3{
+        padding: 30px 0;
+    }
+    section.curiosidades .txt p{
+        padding: 5px 0;
+        text-align: justify;
+    }
+    
+    section.curiosidades .img img{
+        border-radius: 15px;
+        border: 15px solid #5ca5c3;
+    }
+
+    /*Estilo Footer*/
+    footer .logo-footer, .menu-footer{
+        display: none;
+    }
+
+}
+

@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    /* Faz com que os elementos sejam dispostos verticalmente */
+    align-items: stretch;
+    /* Opcional, estica os elementos verticalmente */
+}
+
+.headerTop img {
+    width: 50%;
+}
+
+.headerTop {
+    padding: 20px 4%;
+    background-color: #31689f;
+}
+
+.headerTop a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.headerBottom {
+    padding: 20px 4%;
+    border-bottom: 2px solid #31689f;
+}
+
+
+.header p {
+    font-size: 23px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+    color: #31689f;
+}
+
+.header i {
+    font-size: 23px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 80px 80px 300px 100px 80px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.grid-container>div {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Item1 abaixo do topo*/
+.item1 {
+    background-color: #fbfcfc;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.textoTopo {
+    width: 98%;
+    height: 80%;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.textoTopo p {
+    color: #010101;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+/*Item1 abaixo do topo - Final*/
+
+/*Depoimentos */
+.item2 {
+    background-color: #f9f9f9;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.slide i {
+    font-size: 90px;
+    color: #e2e2e2;
+}
+
+.depoimentos {
+    width: 100%;
+    margin: 0%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    font-weight: 200;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.depoimentos p {
+    color: #31689f;
+}
+
+.depoimentos .slide {
+    padding: 3px 0px;
+}
+
+
+.depoimentoNome {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+}
+
+/*Fim Depoimentos*/
+
+/*Atendimento online*/
+.item3 {
+    background-color: #ffffff;
+    grid-column: 2/3;
+    grid-row: 2/6;
+}
+
+.atendimento img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* cobre o espaço da div sem distorcer */
+    display: block;
+    margin-top: 11%;
+}
+
+.longevidade img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* cobre o espaço da div sem distorcer */
+    display: block;
+    margin-top: 5%;
+}
+
+/*Atendimento online - Fim*/
+
+/*Profissionais Cards*/
+.item4 {
+    background-color: #f9f9f9;
+    grid-column: 3/4;
+    grid-row: 2/6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.item4 .card .image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #31689f;
+    margin-top: 80px;
+}
+
+.item4 .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card {
+    height: 500px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: #31689f;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+
+.card .name-profission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name-profission .name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.name-profission .profission {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card .rating {
+    font-size: 18px;
+    color: #31689f;
+    margin-top: 20px;
+}
+
+.card .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.card .button button {
+    background-color: #31689f;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.button button:hover {
+    background-color: #1a4570;
+}
+
+/*Profissionais Cards Fim*/
+
+/*descritivo de atendimento*/
+.item5 {
+    background-color: #31689f;
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+    padding: 20px;
+    /* Adiciona espaço interno */
+    display: flex;
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+}
+
+.texto {
+    width: 100%;
+    height: 80%;
+    text-align: justify;
+    hyphens: auto;
+    margin-bottom: 55px;
+}
+
+.texto ul {
+    padding-left: 10px;
+    /* Recuo visual padrão para listas */
+    margin: 0;
+}
+
+.texto ul li {
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 500;
+    list-style-type: decimal;
+    margin-bottom: 2px;
+}
+
+/*descritivo de atendimento*/
+
+/*Footer*/
+.footer .interface {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+}
+
+.footer {
+    border-top: #31689f solid 2px;
+}
+
+.footer .interface {
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+}
+
+.footer i {
+    font-size: 23px;
+}
+
+.footer a {
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.footer p {
+    color: black;
+}
+
+.logo-footer img {
+    width: 50%;
+}
+
+@media screen and (max-width: 850px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item2,
+    .item3,
+    .item4,
+    .item5 {
+        width: 100%;
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .footer .interface {
+        padding: 2%;
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .btn-voltar {
+        display: none;
+    }
+
+    .direitos p {
+        font-size: 13px;
+    }
+
+    .logo-footer img {
+        width: 30%;
+    }
+}

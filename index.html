@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,16 +12,21 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!--Fim Google Fonts-->
+
     <!--Boot Strap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--Fim Boot Strap-->
-    <link rel="stylesheet" href="styleSheets/style.css">
-    <link rel="stylesheet" href="styleSheets/carrocel.css">
 
+    <!--Style CSS-->
+    <link rel="stylesheet" href="styleSheets/main.css">
+    <link rel="stylesheet" href="styleSheets/profissionalCarrocel.css">
+    <link rel="stylesheet" href="styleSheets/swiper-bundle.min.css">
+    <!--Style CSS-Fim-->
 
+    <!--JavaScript-->
+    <script src="js/swiper-bundle.min.js" defer></script>
     <script src="js/menu.js" defer></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="js/carrocel.js" defer></script>
+    <!--JavaScript-Fim-->
 
     <title>MedBR Global</title>
 </head>
@@ -118,7 +124,7 @@
                             <div class="cliqueAqui">
                                 <p>Clique Aqui!</p>
                             </div>
-                            
+
                         </div><!--saude-box-->
                     </a>
 
@@ -157,121 +163,207 @@
         <section class="profissionais" id="profissionais">
             <h2 class="titulo">Profissionais</h2>
 
-            <div class="container">
-                <div class="card-carousel">
-                    <div class="card" id="1">
-                        <div class="image-container" style="background-image: url('images/dr.icaro.jpg');"></div>
-                        <h2 class="profissional">Dr. Ícaro Alves Alcântra</h2>
-                        <p class="conselho">CRM/DF 11639</p>
-                        <p class="descritivo">Médico formado pela Universidade de Brasília em 2000,
-                            com especialização em Homeopatia e pós-graduação em Estratégia Ortomolecular em
-                            Medicina.
-                            Com mais de 25 anos de experiência, já atendeu mais de 40 mil pacientes,
-                            focando em abordagens integrativas e ortomoleculares para promover qualidade de vida
-                            e hábitos
-                            saudáveis. Além de médico, é autor de nove livros e palestrante em temas como
-                            qualidade
-                            de vida, emagrecimento saudável e gestão do estresse.</p>
-                        <div class="btn-social">
-                            <a href="https://icaro.med.br" target="_blank"><button><i
-                                        class="bi bi-globe"></i></button></a>
-                            <a href="https://www.instagram.com/dricaroalves/?ref=indirimlikupon.com"
-                                target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.facebook.com/icaro.aa/?locale=pt_BR" target="blank"><button><i
-                                        class="bi bi-facebook"></i></button></a>
-                            <a href="https://www.youtube.com/user/icaroalves" target="_blank"><button><i
-                                        class="bi bi-youtube"></i></button></a>
-                            <a href="https://wa.me/5561996467775" target="_blank"><button><i
-                                        class="bi bi-whatsapp"></i></button></a>
-                        </div>
-                    </div>
-                    <div class="card" id="2">
-                        <div class="image-container" style="background-image: url('images/Dr.Spider.jpg');"></div>
-                        <h2 class="profissional">Dr. Marco Aurelio Aranha da Silveira(Dr. Spider)</h2>
-                        <p class="conselho">CRM/PR 19352</p>
-                        <p class="descritivo">Clínico geral com ampla experiência em pacientes diversos,
-                            incluindo atletas e ex-atletas do UFC. Vai além do tratamento, promovendo
-                            saúde, qualidade de vida e desempenho físico. Com abordagem personalizada,
-                            cuida do bem-estar e da longevidade, além de auxiliar atletas na recuperação
-                            e manutenção da performance. Sua expertise no acompanhamento de profissionais
-                            de alto rendimento o torna referência em saúde e desempenho.</p>
-                        <div class="btn-social">
-                            <a href="https://kingcommkt.online/thedoctorspiderconcept" target="_blank"><button><i
-                                        class="bi bi-globe"></i></button></a>
-                            <a href="https://www.instagram.com/thedoctorspider/" target="_blank"><button><i
-                                        class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.facebook.com/p/Marco-Aranha-100042065736052/"
-                                target="_blank"><button><i class="bi bi-facebook"></i></button></a>
-                            <a href="https://api.whatsapp.com/send?phone=5541988007706" target="_blank"><button><i
-                                        class="bi bi-whatsapp"></i></button></a>
-                        </div>
-                    </div>
-                    <div class="card" id="3">
-                        <div class="image-container" style="background-image: url('images/felypeAndrade.jpg');"></div>
-                        <h2 class="profissional">Nutricionista - Felype Andrade</h2>
-                        <p class="conselho">CRN/DF 17254</p>
-                        <p class="descritivo">
-                            Se você busca uma alimentação equilibrada, saúde de qualidade e resultados reais,
-                            Felype Andrade é o profissional ideal para te guiar nessa jornada! Com uma abordagem
-                            personalizada e baseada em ciência, Felype auxilia pacientes a conquistarem seus
-                            objetivos,
-                            seja para emagrecimento, ganho de massa muscular, melhora do desempenho esportivo ou
-                            reeducação
-                            alimentar.
-                        <p>
+            <div class="centralizar">
 
-                        <div class="btn-social">
-                            <a href="https://www.instagram.com/nutri.felypeandrade/" target="_blank"><button><i
-                                        class="bi bi-instagram"></i></button></a>
-                            <a href="https://wa.me/5561981249282" target="_blank"><button><i
-                                        class="bi bi-whatsapp"></i></button></a>
-                        </div>
-                    </div>
-                    <div class="card" id="4">
-                        <div class="image-container" style="background-image: url('images/dr.Liamara.jpg');"></div>
-                        <h2 class="profissional">Dra. Liamara Lopes Toledo</h2>
-                        <p class="conselho">CRP/DF 01-23739</p>
-                        <p class="descritivo">Psicóloga formada pelo UDF, com
-                            ampla experiência em psicoterapia de casais, adolescentes, adultos
-                            e idosos. Especialista em Psicodrama e pós-graduada em TCC, atua no
-                            tratamento de ansiedade, depressão, relacionamentos e autoconhecimento.
-                            Possui formação em Manejo de Suicídio, Terapia do Esquema e enfrentamento
-                            da violência contra a mulher, oferecendo acolhimento e estratégias eficazes
-                            para o bem-estar emocional de seus pacientes.</p>
+                <div class="depoimentos mySwiper">
 
-                        <div class="btn-social">
-                            <a href="https://www.instagram.com/liamaratoledo/" target="_blank"><button><i
-                                        class="bi bi-instagram"></i></button></a>
-                            <a href="https://wa.me/5561998914455" target="_blank"><button><i
-                                        class="bi bi-whatsapp"></i></button></a>
-                        </div>
-                    </div>
-                    <div class="card" id="5">
-                        <div class="image-container" style="background-image: url('images/Dr.Karen.jpg');"></div>
-                        <h2 class="profissional">Dra. Karen Cristina de Paula Santos</h2>
-                        <p class="conselho">CRP/DF 01-21478</p>
-                        <p class="descritivo">Psicóloga formada
-                            pela Universidade Católica de Goiás em 2006, com
-                            especialização em Neuropsicologia. Atua no atendimento
-                            de adolescentes, adultos e idosos, promovendo o desenvolvimento
-                            emocional e cognitivo. Com abordagem fenomenológico-existencial,
-                            oferece um espaço acolhedor para autoconhecimento e enfrentamento
-                            de questões como ansiedade, estresse e dificuldades de adaptação,
-                            sempre buscando o bem-estar e a qualidade de vida.</p>
+                    <div class=" depoimentos-container swiper-wrapper">
 
-                        <div class="btn-social">
-                            <a href="https://www.instagram.com/karen.neuropsicologa/" target="_blank"><button><i
-                                        class="bi bi-instagram"></i></button></a>
-                            <a href="https://wa.me/5561996266606" target="_blank"><button><i
-                                        class="bi bi-whatsapp"></i></button></a>
-                        </div>
-                    </div>
+                        <!------------------Icaro-------------------------------->
+                        <div class="slide swiper-slide">
+                            <img src="images/dr.icaro.jpg" alt="">
+                            <h2 class="profissional">Dr. Ícaro Alves Alcântra</h2>
+                            <p class="conselho">CRM/DF 11639</p>
 
-                </div>
+                            <p class="descritivo">
+                                <!--Texto ter no máximo 508 caracteres-->
+                                Médico formado pela Universidade de Brasília em 2000,
+                                com especialização em Homeopatia e pós-graduação em Estratégia Ortomolecular em
+                                Medicina.
+                                Com mais de 25 anos de experiência, já atendeu mais de 40 mil pacientes,
+                                focando em abordagens integrativas e ortomoleculares para promover qualidade de vida
+                                e hábitos
+                                saudáveis. Além de médico, é autor de nove livros e palestrante em temas como
+                                qualidade
+                                de vida, emagrecimento saudável e gestão do estresse.
+                            </p>
 
-                <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
-            </div>
-        </section><!--profissionais-->
+                            <div class="btn-social">
+                                <a href="https://icaro.med.br" target="_blank"><button><i
+                                            class="bi bi-globe"></i></button></a>
+                                <a href="https://www.instagram.com/dricaroalves/?ref=indirimlikupon.com"
+                                    target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="https://www.facebook.com/icaro.aa/?locale=pt_BR" target="blank"><button><i
+                                            class="bi bi-facebook"></i></button></a>
+                                <a href="https://www.youtube.com/user/icaroalves" target="_blank"><button><i
+                                            class="bi bi-youtube"></i></button></a>
+                                <a href="https://wa.me/5561996467775" target="_blank"><button><i
+                                            class="bi bi-whatsapp"></i></button></a>
+                            </div><!--btn-social-fim-->
+                        </div><!--slide-fim-->
+                        <!--------------------Icaro-----Fim--------------------------->
+
+                        <!-----------------------Spider----------------------------->
+                        <div class="slide swiper-slide">
+                            <img src="images/Dr.Spider.jpg" alt="">
+                            <h2 class="profissional">Dr. Marco Aurelio Aranha da Silveira(Dr. Spider)</h2>
+                            <p class="conselho">CRM/PR 19352</p>
+                            <p class="descritivo">
+                                <!--Texto ter no máximo 508 caracteres-->
+                                Clínico geral com ampla experiência em pacientes diversos,
+                                incluindo atletas e ex-atletas do UFC. Vai além do tratamento, promovendo
+                                saúde, qualidade de vida e desempenho físico. Com abordagem personalizada,
+                                cuida do bem-estar e da longevidade, além de auxiliar atletas na recuperação
+                                e manutenção da performance. Sua expertise no acompanhamento de profissionais
+                                de alto rendimento o torna referência em saúde e desempenho.
+                            </p>
+                            <div class="btn-social">
+                                <a href="https://kingcommkt.online/thedoctorspiderconcept" target="_blank"><button><i
+                                            class="bi bi-globe"></i></button></a>
+                                <a href="https://www.instagram.com/thedoctorspider/" target="_blank"><button><i
+                                            class="bi bi-instagram"></i></button></a>
+                                <a href="https://www.facebook.com/p/Marco-Aranha-100042065736052/"
+                                    target="_blank"><button><i class="bi bi-facebook"></i></button></a>
+                                <a href="https://api.whatsapp.com/send?phone=5541988007706" target="_blank"><button><i
+                                            class="bi bi-whatsapp"></i></button></a>
+                            </div><!--btn-social-fim-->
+                        </div><!--slide-fim-->
+                        <!----------------------Spider-----Fim------------------------->
+
+                        <!-------------------Felype--------------------------------->
+                        <div class="slide swiper-slide">
+                            <img src="images/felypeAndrade.jpg" alt="">
+                            <h2 class="profissional">Nutricionista - Felype Andrade</h2>
+                            <p class="conselho">CRN/DF 17254</p>
+                            <p class="descritivo">
+                                <!--Texto ter no máximo 508 caracteres-->
+                                Se você busca uma alimentação equilibrada, saúde de qualidade e resultados reais,
+                                Felype Andrade é o profissional ideal para te guiar nessa jornada! Com uma abordagem
+                                personalizada e baseada em ciência, Felype auxilia pacientes a conquistarem seus
+                                objetivos,
+                                seja para emagrecimento, ganho de massa muscular, melhora do desempenho esportivo ou
+                                reeducação
+                                alimentar.
+                            <p>
+
+                            <div class="btn-social">
+                                <a href="https://www.instagram.com/nutri.felypeandrade/" target="_blank"><button><i
+                                            class="bi bi-instagram"></i></button></a>
+                                <a href="https://wa.me/5561981249282" target="_blank"><button><i
+                                            class="bi bi-whatsapp"></i></button></a>
+                            </div><!--btn-social-fim-->
+                        </div><!--slide-fim-->
+                        <!--------------------Felype---Fim----------------------------->
+
+                        <!-------------------Liamara--------------------------------->
+                        <div id="liamara" class="slide swiper-slide">
+                            <img src="images/dr.Liamara.jpg" alt="">
+                            <h2 class="profissional">Dra. Liamara Lopes Toledo</h2>
+                            <p class="conselho">CRP/DF 0123739</p>
+                            <p class="descritivo">
+                                <!--Texto ter no máximo 508 caracteres-->
+                                Psicóloga formada pelo UDF, com
+                                ampla experiência em psicoterapia de casais, adolescentes, adultos
+                                e idosos. Especialista em Psicodrama e pós-graduada em TCC, atua no
+                                tratamento de ansiedade, depressão, relacionamentos e autoconhecimento.
+                                Possui formação em Manejo de Suicídio, Terapia do Esquema e enfrentamento
+                                da violência contra a mulher, oferecendo acolhimento e estratégias eficazes
+                                para o bem-estar emocional de seus pacientes.
+                            </p>
+
+                            <div class="btn-social">
+                                <a href="https://www.instagram.com/liamaratoledo/" target="_blank"><button><i
+                                            class="bi bi-instagram"></i></button></a>
+                                <a href="https://wa.me/5561998914455" target="_blank"><button><i
+                                            class="bi bi-whatsapp"></i></button></a>
+                            </div><!--btn-social-fim-->
+                        </div><!--slide-fim-->
+                        <!----------------Liamara---Fim--------------------------------->
+
+                        <!--------------------Karen-------------------------------->
+                        <div class="slide swiper-slide" id="karen">
+                            <img src="images/Dr.Karen.jpg" alt="">
+                            <h2 class="profissional">Dra. Karen Cristina de Paula Santos</h2>
+                            <p class="conselho">CRP/DF 0121478</p>
+                            <p class="descritivo">
+                                <!--Texto ter no máximo 508 caracteres-->
+                                Psicóloga formada
+                                pela Universidade Católica de Goiás em 2006, com
+                                especialização em Neuropsicologia. Atua no atendimento
+                                de adolescentes, adultos e idosos, promovendo o desenvolvimento
+                                emocional e cognitivo. Com abordagem fenomenológico-existencial,
+                                oferece um espaço acolhedor para autoconhecimento e enfrentamento
+                                de questões como ansiedade, estresse e dificuldades de adaptação,
+                                sempre buscando o bem-estar e a qualidade de vida.
+                            </p>
+
+                            <div class="btn-social">
+                                <a href="https://www.instagram.com/karen.neuropsicologa/" target="_blank"><button><i
+                                            class="bi bi-instagram"></i></button></a>
+                                <a href="https://wa.me/5561996266606" target="_blank"><button><i
+                                            class="bi bi-whatsapp"></i></button></a>
+                            </div><!--btn-social-fim-->
+                        </div><!--slide-fim-->
+                        <!---------------Karen------Fim------------------------------->
+
+                        <!--------------Fernanda-------------------------------------->
+                        <div class="slide swiper-slide">
+                            <img src="images/terapeutaFernanda.jpg" alt="Terapeuta Fernanda">
+                            <h2 class="profissional">Fisioterapeuta - Fernanda Tessitore Martins</h2>
+                            <p class="conselho">CREFITO/DF 369140-F</p>
+                            <p class="descritivo">
+                                <!--Texto ter no máximo 508 caracteres-->
+                                Especialista em saúde íntima e bem-estar feminino, Fernanda Tessitore Martins é
+                                fisioterapeuta
+                                pélvica formada pelo UNICEUB. Atua no tratamento de disfunções sexuais, reabilitação
+                                pélvica,
+                                obstetrícia e pós-parto. Com abordagem humanizada, também é consultora de amamentação,
+                                promovendo
+                                conforto para mães e bebês. Seu foco é o cuidado integral da mulher, fortalecendo a
+                                autoconfiança,
+                                saúde e qualidade de vida em todas as fases.
+                            </p>
+                            <div class="btn-social">
+                                <a href="https://www.instagram.com/fisiopelvica.fer?igsh=MWQ2YWJreW5tN3pjOQ%3D%3D&utm_source=qr"
+                                    target="blank"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="https://wa.me/5561920023076" target="_blank><button><i
+                                            class="bi bi-whatsapp"></i></button></a>
+                            </div><!--btn-social-Fim-->
+                        </div><!--slide-fim-->
+                        <!---------------Fernanda------Fim------------------------------->
+
+                        <!--------------Rafael-------------------------------------->
+                        <div class="slide swiper-slide">
+                            <img src="images/RafaelPersonal.jpg" alt="Personal Rafael">
+                            <h2 class="profissional">Personal - Rafael Martins</h2>
+                            <p class="conselho">CREF 011423-G\DF</p>
+                            <p class="descritivo">
+                                <!--Texto ter no máximo 508 caracteres-->
+                                Sou bacharel em Educação Física pela Universidade de Brasília e atendo brasileiros que
+                                vivem no exterior. Ofereço treinos personalizados para emagrecimento, ganho de massa
+                                magra, condicionamento físico, gestação e pós-parto. Com experiência em academias, lutas
+                                e aulas coletivas, adapto o treino à sua realidade, cuidando da sua saúde mesmo longe.
+                            </p>
+                            <div class="btn-social">
+                                <a href="https://www.instagram.com/rafaelmartinspersonalt?igsh=MWw0bGQ5NzgzbHBmOQ=="
+                                    target="blank"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="https://wa.me/5561982144374" target="_blank><button><i
+                                            class="bi bi-whatsapp"></i></button></a>
+                            </div><!--btn-social-Fim-->
+                        </div><!--slide-fim-->
+                        <!---------------Rafael------Fim------------------------------->
+
+                    </div><!--depoimentos-container-Fim-->
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+
+                </div><!--depoimentos mySwiper"-Fim-->
+
+            </div><!--centralizar-Fim-->
+
+        </section><!--profissionais-Fim-->
 
         <section class="curiosidades" id="curiosidade">
             <div class="interface">
